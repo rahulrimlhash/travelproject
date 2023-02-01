@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login page</title>
+</head>
+<body>
+   <form action="login" method="post">
+     {% csrf_token %}
+         <label>Username</label>
+         <input type="text" name="username" placeholder="Enter your username"><br/>
+
+         <label> First Name </label>
+         <input type="password" name="password" placeholder="Enter your password"><br/>
+
+         <input type="submit">
+
+
+   </form>
+
+</body>
+</html>
